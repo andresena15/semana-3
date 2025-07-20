@@ -1,7 +1,7 @@
 import { adicionarProduto } from "./controller/controleEstoque";
 import { Data } from "C:/.../model/interfaceData";
 
-function próximoComando(){
+do{
     console.log("Para adicionar produto digite:1");
     console.log("para remover produto digite:2");
     console.log("Para listar os produtos digite:3");
@@ -17,34 +17,31 @@ function próximoComando(){
     if(entrada !== null){ 
         A = parseInt(entrada, 10);
     }
-    return A;
-}
-
-var comando = próximoComando();
-
-
-switch (comando){
-    case 1:
-        var X = prompt("Digite o nome do produto:");
-        var Y = prompt("Digite o peso do produto:");
-        var W = prompt("Digite o valor do produto:");
-        var Z = prompt("Digite a quantidade do produto:");
-
-        if(Y !== null && W !== null && Z !== null){
-            const dados = {
-            nome: X,
-            peso: parseInt(Y,10),
-            valor: parseInt(W, 10),
-            quantidade: parseInt(Z, 10),
-        } as Data
-        await adicionarProduto(dados);
-        break;
-
-        }
-    case 2:
-        console.log("Qual o nome do item que você deseja remover:")
-
-
+    switch (A){
+        case 1:
+            var X = prompt("Digite o nome do produto:");
+            var Y = prompt("Digite o peso do produto:");
+            var W = prompt("Digite o valor do produto:");
+            var Z = prompt("Digite a quantidade do produto:");
+    
+            if(Y !== null && W !== null && Z !== null){
+                const dados = {
+                    nome: X,
+                    peso: parseInt(Y,10),
+                    valor: parseInt(W, 10),
+                    quantidade: parseInt(Z, 10),
+                } as Data
+                await adicionarProduto(dados);
+            }
+            else{
+                console.log("Ocorreu algum erro.");
+            }
+            break;
+            
+        case 2:
+            var removido = prompt("Digite o nome do produto:");
+            
         
         
-}
+    }
+}while( A != 9);
