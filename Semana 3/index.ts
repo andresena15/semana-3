@@ -1,24 +1,29 @@
 import { adicionarProduto } from "./controller/controleEstoque";
 import { Data } from "C:/.../model/interfaceData";
 
-console.log("Para adicionar produto digite:1");
-console.log("para remover produto digite:2");
-console.log("Para listar os produtos digite:3");
-console.log("Para ver valor total do estoque digite:4");
-console.log("Para ver peso total do estoque digite:5");
-console.log("Para ver média dos valores dos produtos digite:6");
-console.log("Para ver média dos pesos dos produtos digite:7");
-console.log("Para ver quantidade total de produtos no estoque digite:8");
-console.log("Para sair digite:9");
-let entrada: string|null = "olá";
-entrada = prompt("Digite a ação desejada:");
-let A : number = 0;
-if(entrada !== null){ 
-    A = parseInt(entrada, 10);
+function próximoComando(){
+    console.log("Para adicionar produto digite:1");
+    console.log("para remover produto digite:2");
+    console.log("Para listar os produtos digite:3");
+    console.log("Para ver valor total do estoque digite:4");
+    console.log("Para ver peso total do estoque digite:5");
+    console.log("Para ver média dos valores dos produtos digite:6");
+    console.log("Para ver média dos pesos dos produtos digite:7");
+    console.log("Para ver quantidade total de produtos no estoque digite:8");
+    console.log("Para sair digite:9");
+    let entrada: string|null = "olá";
+    entrada = prompt("Digite a ação desejada:");
+    let A : number = 0;
+    if(entrada !== null){ 
+        A = parseInt(entrada, 10);
+    }
+    return A;
 }
 
+var comando = próximoComando();
 
-switch (A){
+
+switch (comando){
     case 1:
         var X = prompt("Digite o nome do produto:");
         var Y = prompt("Digite o peso do produto:");
