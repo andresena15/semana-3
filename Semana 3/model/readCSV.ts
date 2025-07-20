@@ -1,11 +1,11 @@
 import fs from 'fs';
 import csv from 'csv-parser';
-import { Data } from "C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/interfaceData";
+import { Data } from ".../model/interfaceData";
 
-const readCSV = async ("C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/estoque.csv": string): Promise<Data[]> => {
+const readCSV = async (".../model/estoque.csv": string): Promise<Data[]> => {
   return new Promise((resolve, reject) => {
     const results: Data[] = [];
-    fs.createReadStream("C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/estoque.csv")
+    fs.createReadStream(".../model/estoque.csv")
       .pipe(csv())
       .on('data', (data: Data) => results.push(data))
       .on('end', () => resolve(results))
