@@ -1,8 +1,8 @@
 import fs from 'fs';
 import csv from 'csv-parser';
-import { Data } from "../model/interfaceData";
+import { Data } from "C:/.../model/interfaceData";
 
-const readCSV = async ("../model/estoque.csv": string): Promise<Data[]> => {
+const readCSV = async ("C:/.../model/estoque.csv": string): Promise<Data[]> => {
   return new Promise((resolve, reject) => {
     const results: Data[] = [];
     fs.createReadStream("../model/estoque.csv")
