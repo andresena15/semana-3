@@ -1,5 +1,5 @@
-import { Data } from "C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/interfaceData";
-import estoqueService from 'C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/service/serviceEstoque.ts'
+import { Data } from "../model/interfaceData";
+import estoqueService from '../service/serviceEstoque.ts'
 
 export async function adicionarProduto(data:Data) {
     try{
