@@ -1,8 +1,8 @@
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer';
-import { Data } from "../model/interfaceData";
+import { Data } from "C:/.../model/interfaceData";
 
 
-const writeCSV = async ("../model/estoque.csv": string, data: Data[]): Promise<void> => {
+const writeCSV = async ("C:/.../model/estoque.csv": string, data: Data[]): Promise<void> => {
   const csvWriter = createCsvWriter({
     path: "../model/estoque.csv",
     header: [
