@@ -4,7 +4,7 @@ import { Data } from "C:/.../model/interfaceData";
 
 const writeCSV = async ("C:/.../model/estoque.csv": string, data: Data[]): Promise<void> => {
   const csvWriter = createCsvWriter({
-    path: "../model/estoque.csv",
+    path: "C:/.../model/estoque.csv",
     header: [
       { id: 'nome', title: 'NOME' },
       { id: 'valor', title: 'VALOR' },
