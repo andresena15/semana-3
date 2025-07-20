@@ -1,5 +1,5 @@
 import { adicionarProduto } from "./controller/controleEstoque";
-import { Data } from "../model/interfaceData";
+import { Data } from "C:/.../model/interfaceData";
 
 console.log("Para adicionar produto digite:1");
 console.log("para remover produto digite:2");
