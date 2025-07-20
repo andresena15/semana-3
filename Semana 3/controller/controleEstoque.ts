@@ -1,5 +1,5 @@
-import { Data } from "../model/interfaceData";
-import estoqueService from '../service/serviceEstoque.ts'
+import { Data } from "C:/.../model/interfaceData";
+import estoqueService from 'C:/.../service/serviceEstoque.ts'
 
 export async function adicionarProduto(data:Data) {
     try{
