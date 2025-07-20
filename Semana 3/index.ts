@@ -1,5 +1,5 @@
 import { adicionarProduto } from "./controller/controleEstoque";
-import { Data } from "C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/interfaceData";
+import { Data } from "../model/interfaceData";
 
 console.log("Para adicionar produto digite:1");
 console.log("para remover produto digite:2");
