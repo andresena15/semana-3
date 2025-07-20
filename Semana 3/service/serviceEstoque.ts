@@ -1,9 +1,9 @@
-import readCSV from "C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/readCSV";
-import writeCSV from "C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/writeCSV";
-import { Data } from "C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/interfaceData";
+import readCSV from "C:/.../model/readCSV";
+import writeCSV from "C:/.../model/writeCSV";
+import { Data } from "C:/.../model/interfaceData";
 import fs from 'fs';
 
-const filePath = 'C:/Users/andre/OneDrive/Desktop/iJunior/Semana 2/model/estoque.csv'
+const filePath = 'C:/.../model/estoque.csv'
 
 class estoqueService{
     async criar(data: Data)
