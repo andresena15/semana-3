@@ -40,8 +40,43 @@ do{
             
         case 2:
             var removido = prompt("Digite o nome do produto:");
+            await remover(removido);
+            break;
+
+        case 3:
+            listar();
+            break;
+
+        case 4:
+            var vt : number =valorTotal();
+            console.log("O valor total do estoque é:" + vt);
+            break;
+
+        case 5:
+            var pt : number =pesoTotal();
+            console.log("O peso total do estoque é:" + pt);
+            break;
+
+        case 6:
+            var vm : number = valorMédio();
+            console.log("O valor médio do estoque é:" + vm);
+            break;
+
+        case 7:
+            var pm : number = pesoMédio();
+            console.log("O peso médio do estoque é:" + pm);
+            break;
+
+        case 8:
+            var qt : number = quantidadeTotal();
+            cosole.log("A quantidade total no estoque é:" + qt);
+            break;
+
+        case 9:
+            console.log("Encerrando Sistema.");
+        
             
-        
-        
+            
+            
     }
 }while( A != 9);
